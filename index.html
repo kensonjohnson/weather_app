@@ -4,9 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <header class="searchbar"></header>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="main">
+      <div class="current-weather">
+        <div class="current-weather-left">
+          <div class="search">
+            <button
+              type="button"
+              class="search-button"
+              data-search-button
+            ></button>
+            <input
+              type="text"
+              name="searchbar"
+              id="searchbar"
+              placeholder="City or Zipcode"
+              data-searchbar
+            />
+            <button
+              type="button"
+              class="search-clear-button"
+              data-clear-button
+            ></button>
+          </div>
+          <img
+            class="current-weather-icon"
+            src="images/sun-light.svg"
+            alt="sun-light"
+          />
+        </div>
+        <div class="current-weather-middle">
+          <h1 class="right-now-title">Right Now</h1>
+          <div class="current-weather-info-container">
+            <div class="right-now" data-weather-desc>Sunny</div>
+            <div class="right-now"><span data-current-temp>89</span>&deg;</div>
+            <div class="right-now">
+              Feels Like <span data-fl-temp>90</span>&deg;
+            </div>
+            <div class="right-now" data-wind-speed>2mph Wind</div>
+          </div>
+        </div>
+        <div class="current-weather-right">
+          <h1 class="info-title">Today</h1>
+          <div class="info-item">
+            <div class="label">High</div>
+            <div><span data-high-temp>92</span>&deg;</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Humidity</div>
+            <div><span data-humidity>92</span>&percnt;</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Wind Direction</div>
+            <div data-wind-direction>East</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Low</div>
+            <div><span data-low-temp>60</span>&deg;</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Cloud Cover</div>
+            <div><span data-clouds>12</span>&percnt;</div>
+          </div>
+          <div class="info-item">
+            <div class="label">Wind Gust Speed</div>
+            <div><span data-wind-gust-speed>5</span>mph</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="seperator">Hourly Forecasts</h1>
+      <div class="hourly-weather">
+        <div class="forecast-card">
+          <div class="forecast-card-left">
+            <h2 class="forecast-time">12:00pm</h2>
+            <div class="forecast-text">
+              <span data-current-temp>89</span>&deg;
+            </div>
+            <div class="forecast-text">Sunny</div>
+          </div>
+          <div>
+            <img
+              class="forecast-weather-icon"
+              src="images/sun-light.svg"
+              alt="sun-light"
+            />
+          </div>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-card-left">
+            <h2 class="forecast-time">12:00pm</h2>
+            <div class="forecast-text">
+              <span data-current-temp>89</span>&deg;
+            </div>
+            <div class="forecast-text">Sunny</div>
+          </div>
+          <div>
+            <img
+              class="forecast-weather-icon"
+              src="images/sun-light.svg"
+              alt="sun-light"
+            />
+          </div>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-card-left">
+            <h2 class="forecast-time">12:00pm</h2>
+            <div class="forecast-text">
+              <span data-current-temp>89</span>&deg;
+            </div>
+            <div class="forecast-text">Sunny</div>
+          </div>
+          <div>
+            <img
+              class="forecast-weather-icon"
+              src="images/sun-light.svg"
+              alt="sun-light"
+            />
+          </div>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-card-left">
+            <h2 class="forecast-time">12:00pm</h2>
+            <div class="forecast-text">
+              <span data-current-temp>89</span>&deg;
+            </div>
+            <div class="forecast-text">Sunny</div>
+          </div>
+          <div>
+            <img
+              class="forecast-weather-icon"
+              src="images/sun-light.svg"
+              alt="sun-light"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
