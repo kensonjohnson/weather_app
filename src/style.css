@@ -1,0 +1,19 @@
+:root {
+  --bg-clr: #2a9d8f;
+  --border-clr: #264653;
+  --item-bg-clr: #e9c46a;
+  --item-sep-clr: #f4a261;
+  --warning: #e76f51;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
