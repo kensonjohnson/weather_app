@@ -25,6 +25,11 @@
             />
             <button
               type="button"
+              class="location-button"
+              data-location-button
+            ></button>
+            <button
+              type="button"
               class="search-clear-button"
               data-clear-button
             ></button>
@@ -33,6 +38,7 @@
             class="current-weather-icon"
             src="images/sun-light.svg"
             alt="sun-light"
+            data-current-weather-icon
           />
         </div>
         <div class="current-weather-middle">
@@ -43,14 +49,14 @@
             <div class="right-now">
               Feels Like <span data-fl-temp>90</span>&deg;
             </div>
-            <div class="right-now" data-wind-speed>2mph Wind</div>
+            <div class="right-now"><span data-wind-speed>2</span>mph Wind</div>
           </div>
         </div>
         <div class="current-weather-right">
           <h1 class="info-title">Today</h1>
           <div class="info-item">
             <div class="label">High</div>
-            <div><span data-high-temp>92</span>&deg;</div>
+            <div><span data-temp-high>92</span>&deg;</div>
           </div>
           <div class="info-item">
             <div class="label">Humidity</div>
@@ -62,7 +68,7 @@
           </div>
           <div class="info-item">
             <div class="label">Low</div>
-            <div><span data-low-temp>60</span>&deg;</div>
+            <div><span data-temp-low>60</span>&deg;</div>
           </div>
           <div class="info-item">
             <div class="label">Cloud Cover</div>

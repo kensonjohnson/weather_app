@@ -52,8 +52,10 @@ body {
 }
 
 .search-button,
-.search-clear-button {
+.search-clear-button,
+.location-button {
   border: none;
+  cursor: pointer;
 }
 
 .search-button {
@@ -71,6 +73,12 @@ body {
 #searchbar:focus,
 #searchbar:active {
   outline: none;
+}
+
+.location-button {
+  background: url(/images/pin-alt.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .search-clear-button {
@@ -135,6 +143,20 @@ body {
   padding: 1rem;
   display: flex;
   gap: 2rem;
+}
+
+::-webkit-scrollbar {
+  height: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--item-sep-clr);
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--warning);
+  border-radius: 100vh;
 }
 
 .forecast-card {
