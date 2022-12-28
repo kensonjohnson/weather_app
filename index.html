@@ -17,10 +17,12 @@
               data-search-button
             ></button>
             <input
-              type="text"
+              type="number"
               name="searchbar"
+              maxlength="5"
+              minlength="5"
               id="searchbar"
-              placeholder="City or Zipcode"
+              placeholder="Please enter a zipcode"
               data-searchbar
             />
             <button
@@ -53,7 +55,7 @@
           </div>
         </div>
         <div class="current-weather-right">
-          <h1 class="info-title">Today</h1>
+          <h1 class="info-title" data-city>Today</h1>
           <div class="info-item">
             <div class="label">High</div>
             <div><span data-temp-high>92</span>&deg;</div>
@@ -81,7 +83,7 @@
         </div>
       </div>
       <h1 class="seperator">Hourly Forecasts</h1>
-      <div class="hourly-weather">
+      <div class="hourly-weather" data-forecast>
         <div class="forecast-card">
           <div class="forecast-card-left">
             <h2 class="forecast-time">12:00pm</h2>
